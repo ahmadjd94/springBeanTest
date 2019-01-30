@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>JavaLearn</groupId>
+    <artifactId>spring</artifactId>
+    <packaging>jar</packaging>
+    <name>this ahmad trying to learn stuff</name>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <properties>
+        <slf4j.version>1.5.0</slf4j.version>
+        <spring.maven.artifact.version>2.5.6.SEC01</spring.maven.artifact.version>
+        <spring.osgi.version>1.2.1</spring.osgi.version>
+        <springVersion>5.1.4.RELEASE</springVersion>
+
+    </properties>
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${springVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${springVersion}</version>
+        </dependency>
+
+
+
+    </dependencies>
+
+
+    <repositories>
+
+            <repository>
+            <snapshots><enabled>true</enabled></snapshots>
+            <id>springframework.org</id>
+            <name>Springframework Maven SNAPSHOT Repository</name>
+            <url>http://s3.amazonaws.com/maven.springframework.org/snapshot</url>
+            </repository>
+
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven-repo</id>
+            <name>maven repo</name>
+            <url>http://repo1.maven.org/maven2/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>com.springsource.repository.bundles.milestone</id>
+            <name>SpringSource Enterprise Bundle Repository - SpringSource Milestone Releases</name>
+            <url>http://repository.springsource.com/maven/bundles/milestone</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>
